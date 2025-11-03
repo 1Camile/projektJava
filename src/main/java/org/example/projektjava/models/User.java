@@ -21,5 +21,5 @@ public class User {
     @NotBlank
     private String role;
     @OneToMany
-    private Set<User_Recipies> recipients;
+    private Set<User_Recipes> recipes;
 }
