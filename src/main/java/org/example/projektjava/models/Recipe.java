@@ -24,5 +24,5 @@ public class Recipe {
     @OneToMany
     private Set<Products_Recipe> products;
     @OneToMany
-    private Set<User_Recipies> sharedToUsers;
+    private Set<User_Recipes> sharedToUsers;
 }

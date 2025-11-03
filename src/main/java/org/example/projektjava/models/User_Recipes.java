@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 @NoArgsConstructor
-public class User_Recipies {
+public class User_Recipes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

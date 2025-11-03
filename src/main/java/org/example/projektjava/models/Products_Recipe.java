@@ -1,7 +1,7 @@
 package org.example.projektjava.models;
 
-import com.sun.istack.NotNull;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +22,6 @@ public class Products_Recipe {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
-    @NotNull //z jakiegos powodu @NotBlank tu nie istnieje a w demo istnieje za to @NotNull tu istnieje a w demo nie istnieje
+    @NotBlank
     private double quantity;
 }
